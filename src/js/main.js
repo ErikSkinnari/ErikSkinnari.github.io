@@ -1,18 +1,34 @@
-var portrait = document.getElementById('portrait');
-var about = document.getElementById('about');
-var contact = document.getElementById('contact');
-var projects = document.getElementById('projects');
+let about = document.getElementById('about');
+let contact = document.getElementById('contact');
+let projects = document.getElementById('projects');
 
-var pages = { about, contact, projects }
+let mainRouter = async function (route) {
 
-function menurouter(e) {
-
+    if (route == '#menu_projects') {
+        console.log("projects");
+        about.classList.add('hidden');
+        contact.classList.add('hidden');
+        projects.classList.remove('hidden');
+    }
+    else if (route == '#menu_contact') {
+        console.log("contact");
+        about.classList.add('hidden');
+        projects.classList.add('hidden');
+        contact.classList.remove('hidden');
+    }
+    else {
+        console.log("about");
+        contact.classList.add('hidden');
+        projects.classList.add('hidden');
+        about.classList.remove('hidden');
+    }
 }
 
-window.onload = async function () {
+async function routeFunction() {
+    var route = window.location.hash;
+    await mainRouter(route);
+}
 
-    var githubdata = await fetch('https://api.github.com/users/ErikSkinnari/repos');
-    var githubprofile = await githubdata.json();
-
-    console.log(githubprofile);
-};
+window.addEventListener("hashchange", function () {
+    routeFunction();
+});

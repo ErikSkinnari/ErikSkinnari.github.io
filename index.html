@@ -15,13 +15,11 @@
     <nav>
         <div class="navbar">
             <div class="flex-h nav-menu">
-                <a href="index.html">
-                    <img class="cube" src="./src/img/cube.png" alt="3d cube">
-                </a>
+                <img class="cube" src="./src/img/cube.png" alt="3d cube">
                 <ul class="menu-list">
-                    <li><a href="">My Experience</a></li>
-                    <li><a href="">Coding Projects</a></li>
-                    <li><a href="">Contact Me</a></li>
+                    <li><a href="#menu_about">My Experience</a></li>
+                    <li><a href="#menu_projects">Coding Projects</a></li>
+                    <li><a href="#menu_contact">Contact Me</a></li>
                 </ul>
             </div>
         </div>
@@ -36,10 +34,11 @@
         <div class="content">
 
 
-            <div id="about" class="content-container slide-disabled">
+            <div id="about" class="content-container">
+                <h1>My experience</h1>
                 <div class="info-card">
                     <div class="card-icons">
-                        <i class="fas fa-user-graduate card-icon"></i>
+                        <i class="fas fa-user-graduate card-icon"></i><br>
                         <i class="fas fa-ellipsis-v card-icon-small"></i>
                     </div>
                     <div class="card-info">
@@ -56,13 +55,14 @@
                             <p class="card-tag">WEB</p>
                             <p class="card-tag">Xamarin</p>
                             <p class="card-tag">Backend</p>
+                            <p class="card-tag">JavaScript</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="info-card">
                     <div class="card-icons">
-                        <i class="fas fa-wine-glass card-icon"></i>
+                        <i class="fas fa-wine-glass card-icon"></i><br>
                         <i class="fas fa-ellipsis-v card-icon-small"></i>
                     </div>
                     <div class="card-info">
@@ -86,7 +86,7 @@
 
                 <div class="info-card">
                     <div class="card-icons">
-                        <i class="fas fa-truck-moving card-icon"></i>
+                        <i class="fas fa-truck-moving card-icon"></i><br>
                         <i class="fas fa-ellipsis-v card-icon-small"></i>
                     </div>
                     <div class="card-info">
@@ -112,7 +112,7 @@
             </div>
 
 
-            <div id="contact" class="content-container slide-enabled">
+            <div id="contact" class="content-container hidden">
                 <h1>Contact me!</h1>
                 <p><i class="fas fa-envelope card-icon"></i> <a class="no-decoration"
                         href="mailto:erik@skinnari.se">erik@skinnari.se</a></p>
@@ -123,8 +123,68 @@
             </div>
 
 
-            <div id="projects" class="content-container slide-disabled">
-                <p>HELLO Projects!!</p>
+            <div id="projects" class="content-container hidden">
+                <h1>My Projects</h1>
+                <p>A collection of some of my projects so far. The source code for all of them is on my github. Link
+                    down below in footer.</p>
+
+
+                <hr>
+                <div class="project">
+                    <img src="./src/img/asteroids.png" alt="" class="project-img">
+                    <div class="project-info">
+                        <h1 class="project-name">Blasteroids</h1>
+                        <p class="project-description">My version of the old classic Asteroids. This is not finished,
+                            but playable to a degree. There is only one scene and as the player clears a level the next
+                            level starts imediatly.<br> The sounds in the game is my own
+                            The game is made with Unity and coded in C#.
+                            Source code <a href="https://github.com/ErikSkinnari/Blasteroids">here</a>.</p>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="project">
+                    <img src="./src/img/ballbounce.png" alt="" class="project-img">
+                    <div class="project-info">
+                        <h1 class="project-name">Ball Bounce</h1>
+                        <p class="project-description">A game where you try to stop the ball from hitting the bottom
+                            with a paddel. The twist is that the ball is going a little bit faster each time it bounce
+                            on the paddle. <br>
+                            Written in JS with the library p5.js
+                            You can play the game <a href="https://skinnari.se/ballbounce">here</a>.</p>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="project">
+                    <img src="./src/img/paddlebattle.png" alt="" class="project-img">
+                    <div class="project-info">
+                        <h1 class="project-name">Paddle Battle</h1>
+                        <p class="project-description">A similar game as the previouse one. This is a 2-player game with
+                            the goal to keep the ball at your side of the board. Each player has a timer ticking when
+                            the ball is on their side and the fist player to hit the score limit wins. <br>
+                            Written in JS with the library p5.js
+                            You can play the game <a href="https://skinnari.se/paddlebattle">here</a>.</p>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="project">
+                    <img src="./src/img/kanban.png" alt="" class="project-img">
+                    <div class="project-info">
+                        <h1 class="project-name">Kanban Board Mockup</h1>
+                        <p class="project-description">As a group assignement in school we started the development of a
+                            Kanban tool. Before we started I made a mockup with vanilla JS. The mockup can be temporaily
+                            edited, but is reset on page reload. This was just a test before the "real" assignement were
+                            done.
+                            You can se the board and try it here <a href="https://skinnari.se/kanban">here</a>.
+                            <br>
+                            The group assignement later developed with 4 teammates in ASP.NET can be found <a
+                                href="https://github.com/ErikSkinnari/Kanban-Meta">here</a>. That project was never
+                            fully finished</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
