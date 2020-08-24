@@ -1,6 +1,8 @@
 let about = document.getElementById('about');
 let contact = document.getElementById('contact');
 let projects = document.getElementById('projects');
+let menubutton = document.getElementById('menubutton');
+let navigation = document.getElementById('navigation');
 
 let mainRouter = async function (route) {
 
@@ -22,6 +24,7 @@ let mainRouter = async function (route) {
         projects.classList.add('hidden');
         about.classList.remove('hidden');
     }
+    navigation.classList.toggle('hide-mobile');
 }
 
 async function routeFunction() {
@@ -32,3 +35,7 @@ async function routeFunction() {
 window.addEventListener("hashchange", function () {
     routeFunction();
 });
+
+menubutton.addEventListener('click', function () {
+    navigation.classList.toggle('hide-mobile');
+})
