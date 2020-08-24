@@ -16,19 +16,21 @@
         <div class="navbar">
             <div class="flex-h nav-menu">
                 <img class="cube" src="./src/img/cube.png" alt="3d cube">
-                <ul class="menu-list">
+                <ul id="navigation" class="menu-list hide-mobile">
                     <li><a href="#menu_about">My Experience</a></li>
                     <li><a href="#menu_projects">Coding Projects</a></li>
                     <li><a href="#menu_contact">Contact Me</a></li>
                 </ul>
+                <i id="menubutton" class="fas fa-bars hide-desktop show-mobile hamburger"></i>
             </div>
         </div>
     </nav>
-    <div class="m-10 main-content flex-h collapse">
+    <div class="main-content flex-h collapse">
 
         <div class="logo-div">
-            <img id="logo" src="./src/img/newlogo.png" alt="text logo">
             <img id="portrait" class="portrait" src="./src/img/portrait.png" alt="portrait">
+            <img id="logo" src="./src/img/logoVerical.png" alt="text logo">
+            <img id="logo-mobile" src="./src/img/logoHorizontal.png" alt="text logo">
         </div>
 
         <div class="content">
@@ -43,6 +45,7 @@
                     </div>
                     <div class="card-info">
                         <div class="card-header">
+                            <i class="fas fa-user-graduate icon-mobile"></i>
                             <p class="card-title">Student</p>
                             <p class="card-time">2019 - present</p>
                         </div>
@@ -67,6 +70,7 @@
                     </div>
                     <div class="card-info">
                         <div class="card-header">
+                            <i class="fas fa-wine-glass icon-mobile"></i>
                             <p class="card-title">Systembolaget AB</p>
                             <p class="card-time">2014 - 2019</p>
                         </div>
@@ -91,6 +95,7 @@
                     </div>
                     <div class="card-info">
                         <div class="card-header">
+                            <i class="fas fa-truck-moving icon-mobile"></i>
                             <p class="card-title">Postnord Logistics</p>
                             <p class="card-time">2005 - 2014</p>
 

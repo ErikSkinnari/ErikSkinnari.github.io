@@ -44,6 +44,10 @@ body {
   overflow: hidden;
 }
 
+.hide-desktop {
+  display: none;
+}
+
 .navbar {
   position: fixed;
   top: 0;
@@ -102,6 +106,7 @@ body {
   margin-top: var(--header-height) !important;
   overflow: hidden;
   position: relative;
+  margin: 0 10vw;
 }
 
 .logo-div {
@@ -114,8 +119,13 @@ body {
   height: 30vh;
   background-color: rgb(0, 0, 0);
 }
+
+#logo-mobile {
+  display: none;
+}
+
 .portrait {
-  margin-left: 2em;
+  margin: 1em;
   width: 12vw;
 }
 
@@ -150,7 +160,6 @@ body {
   border: 1px solid white;
   width: 10vw;
   height: 10vw;
-  /* height: auto; */
 }
 
 .project-info {
@@ -172,7 +181,6 @@ body {
 }
 
 .info-card {
-  width: 90%;
   margin: 2em 0 0;
   display: flex;
 }
@@ -183,6 +191,10 @@ body {
   flex-direction: column;
   align-items: center;
   width: 2em;
+}
+
+.icon-mobile {
+  display: none;
 }
 
 .card-icon {
@@ -197,14 +209,11 @@ body {
   position: relative;
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 
 .card-info {
   flex-basis: 80%;
-  /* position: absolute; */
-
-  left: 4em;
-  margin-left: 0.8em;
 }
 
 .card-title {
@@ -212,9 +221,7 @@ body {
 }
 
 .card-time {
-  position: absolute;
   margin-top: 0%;
-  right: 0;
   font-size: 0.8em;
   color: grey;
 }
@@ -284,4 +291,136 @@ body {
 
 .hidden {
   display: none !important;
+}
+
+@media only screen and (max-width: 1600px) {
+  .content-container {
+    width: 50vw;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .main-content {
+    flex-direction: column;
+    margin: 0 2vw;
+    overflow: auto;
+  }
+
+  .content-container {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 3em;
+    padding: 2px;
+    position: relative;
+    height: auto;
+    overflow-y: inherit;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .logo-div {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .portrait {
+    margin-left: 0;
+    width: 100px;
+  }
+
+  #logo {
+    display: none;
+  }
+
+  #logo-mobile {
+    display: block;
+    width: 20em;
+    max-width: 60vw;
+  }
+
+  .card-info {
+    width: 100%;
+    flex-basis: auto;
+    padding: 0 0.4em;
+  }
+
+  .card-icons {
+    display: none;
+  }
+
+  .icon-mobile {
+    display: block;
+    align-self: center;
+    margin: 1em 0 0.5em;
+  }
+
+  .card-header {
+    flex-direction: column;
+  }
+
+  .card-title {
+    margin-bottom: 0;
+  }
+
+  .card-time {
+    font-size: 0.5em;
+  }
+
+  .card-description {
+    font-size: 0.5em;
+    margin: 0;
+  }
+
+  .card-tags {
+    flex-wrap: wrap;
+  }
+
+  .card-tag {
+    margin: 0.4em 0.4em 0 0;
+  }
+
+  #about > h1:nth-of-type(1) {
+    text-align: center;
+    margin-top: 1em;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .hide-desktop {
+    display: block;
+  }
+
+  .hamburger {
+    font-size: 2.5em;
+    align-self: center;
+  }
+
+  #navigation {
+    position: absolute;
+    height: auto;
+    top: var(--header-height);
+    right: 0;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  .content-container {
+    width: 100%;
+  }
+
+  .menu-list > li {
+    padding: 2em;
+  }
+
+  .hide-mobile {
+    display: none !important;
+  }
 }
