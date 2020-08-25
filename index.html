@@ -25,7 +25,7 @@
             </div>
         </div>
     </nav>
-    <div class="main-content flex-h collapse">
+    <div class="main-content collapse">
 
         <div class="logo-div">
             <img id="portrait" class="portrait" src="./src/img/portrait.png" alt="portrait">
@@ -37,7 +37,7 @@
 
 
             <div id="about" class="content-container">
-                <h1>My experience</h1>
+                <h1 class="page-title">My experience</h1>
                 <div class="info-card">
                     <div class="card-icons">
                         <i class="fas fa-user-graduate card-icon"></i><br>
@@ -118,27 +118,26 @@
 
 
             <div id="contact" class="content-container hidden">
-                <h1>Contact me!</h1>
+                <h1 class="page-title">Contact me!</h1>
                 <p><i class="fas fa-envelope card-icon"></i> <a class="no-decoration"
                         href="mailto:erik@skinnari.se">erik@skinnari.se</a></p>
                 <p><i class="fas fa-phone-square-alt card-icon"></i> <a class="no-decoration"
                         href="tel:+46731578111">0731578111</a></p>
-
-                <p>Link to LinkedIn, Instagram and Github down below in footer. </p>
             </div>
 
 
             <div id="projects" class="content-container hidden">
-                <h1>My Projects</h1>
+                <h1 class="page-title">My Projects</h1>
                 <p>A collection of some of my projects so far. The source code for all of them is on my github. Link
                     down below in footer.</p>
 
 
                 <hr>
                 <div class="project">
-                    <img src="./src/img/asteroids.png" alt="" class="project-img">
+                    <img src="./src/img/asteroids.png" alt="" class="project-img hide-mobile">
                     <div class="project-info">
                         <h1 class="project-name">Blasteroids</h1>
+                        <img src="./src/img/asteroids.png" alt="" class="project-img hide-desktop">
                         <p class="project-description">My version of the old classic Asteroids. This is not finished,
                             but playable to a degree. There is only one scene and as the player clears a level the next
                             level starts imediatly.<br> The sounds in the game is my own
@@ -149,9 +148,10 @@
 
                 <hr>
                 <div class="project">
-                    <img src="./src/img/ballbounce.png" alt="" class="project-img">
+                    <img src="./src/img/ballbounce.png" alt="" class="project-img hide-mobile">
                     <div class="project-info">
                         <h1 class="project-name">Ball Bounce</h1>
+                        <img src="./src/img/ballbounce.png" alt="" class="project-img hide-desktop">
                         <p class="project-description">A game where you try to stop the ball from hitting the bottom
                             with a paddel. The twist is that the ball is going a little bit faster each time it bounce
                             on the paddle. <br>
@@ -162,9 +162,10 @@
                 <hr>
 
                 <div class="project">
-                    <img src="./src/img/paddlebattle.png" alt="" class="project-img">
+                    <img src="./src/img/paddlebattle.png" alt="" class="project-img hide-mobile">
                     <div class="project-info">
                         <h1 class="project-name">Paddle Battle</h1>
+                        <img src="./src/img/paddlebattle.png" alt="" class="project-img hide-desktop">
                         <p class="project-description">A similar game as the previouse one. This is a 2-player game with
                             the goal to keep the ball at your side of the board. Each player has a timer ticking when
                             the ball is on their side and the fist player to hit the score limit wins. <br>
@@ -175,9 +176,10 @@
                 <hr>
 
                 <div class="project">
-                    <img src="./src/img/kanban.png" alt="" class="project-img">
+                    <img src="./src/img/kanban.png" alt="" class="project-img hide-mobile">
                     <div class="project-info">
                         <h1 class="project-name">Kanban Board Mockup</h1>
+                        <img src="./src/img/kanban.png" alt="" class="project-img hide-desktop">
                         <p class="project-description">As a group assignement in school we started the development of a
                             Kanban tool. Before we started I made a mockup with vanilla JS. The mockup can be temporaily
                             edited, but is reset on page reload. This was just a test before the "real" assignement were

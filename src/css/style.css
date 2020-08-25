@@ -12,6 +12,10 @@ h1 {
   padding: 0;
 }
 
+a {
+  color: grey;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -65,6 +69,10 @@ body {
   margin: 0 10%;
 }
 
+#menubutton:hover {
+  cursor: pointer;
+}
+
 .menu-list {
   align-self: center;
   display: flex;
@@ -107,9 +115,11 @@ body {
   overflow: hidden;
   position: relative;
   margin: 0 10vw;
+  display: flex;
 }
 
 .logo-div {
+  align-self: center;
   margin-top: -1em;
   display: flex;
   align-items: center;
@@ -117,6 +127,9 @@ body {
 
 #logo {
   height: 30vh;
+  padding: 0.6em 1em;
+  border: 1px solid white;
+  background-color: black !important;
   background-color: rgb(0, 0, 0);
 }
 
@@ -127,6 +140,7 @@ body {
 .portrait {
   margin: 1em;
   width: 12vw;
+  max-width: 30vw;
 }
 
 .content-container {
@@ -145,6 +159,10 @@ body {
   font-size: 1.3em;
 }
 
+.page-title {
+  font-weight: 300;
+}
+
 .content-container > p {
   margin: 0.4em 0;
   font-size: 0.7em;
@@ -160,6 +178,7 @@ body {
   border: 1px solid white;
   width: 10vw;
   height: 10vw;
+  align-self: center;
 }
 
 .project-info {
@@ -169,6 +188,7 @@ body {
 
 .project-name {
   font-size: 1em;
+  font-weight: 200;
 }
 
 .project-description {
@@ -229,6 +249,10 @@ body {
 .card-description {
   font-size: 0.6em;
   margin: 0;
+}
+
+.card-description > a {
+  color: grey;
 }
 
 .card-tags {
@@ -299,7 +323,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
   .main-content {
     flex-direction: column;
     margin: 0 2vw;
@@ -310,7 +334,7 @@ body {
     width: 80%;
     margin: 0 auto;
     margin-bottom: 3em;
-    padding: 2px;
+    padding: 0.5em;
     position: relative;
     height: auto;
     overflow-y: inherit;
@@ -330,7 +354,7 @@ body {
 
   .portrait {
     margin-left: 0;
-    width: 100px;
+    width: 10em;
   }
 
   #logo {
@@ -339,6 +363,9 @@ body {
 
   #logo-mobile {
     display: block;
+    padding: 0.6em 1em;
+    border: 1px solid white;
+    background-color: black !important;
     width: 20em;
     max-width: 60vw;
   }
@@ -351,6 +378,34 @@ body {
 
   .card-icons {
     display: none;
+  }
+
+  .project {
+    width: 100%;
+  }
+
+  .project-info {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-img {
+    margin: 0.5em 0;
+    height: 5em;
+    width: 5em;
+  }
+
+  .project-name {
+    margin-bottom: 0.5em;
+  }
+
+  .project-description {
+    width: 90%;
+    margin: 0;
+    font-size: 0.6em;
   }
 
   .icon-mobile {
@@ -372,7 +427,7 @@ body {
   }
 
   .card-description {
-    font-size: 0.5em;
+    font-size: 0.6em;
     margin: 0;
   }
 
@@ -384,9 +439,9 @@ body {
     margin: 0.4em 0.4em 0 0;
   }
 
-  #about > h1:nth-of-type(1) {
+  .page-title {
     text-align: center;
-    margin-top: 1em;
+    margin-top: 0.5em;
   }
 }
 
@@ -413,7 +468,7 @@ body {
   }
 
   .content-container {
-    width: 100%;
+    max-width: 100%;
   }
 
   .menu-list > li {
@@ -422,5 +477,8 @@ body {
 
   .hide-mobile {
     display: none !important;
+  }
+  .project-name {
+    margin-bottom: 0;
   }
 }
