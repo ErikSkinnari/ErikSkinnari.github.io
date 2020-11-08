@@ -318,6 +318,10 @@ body {
 }
 
 @media only screen and (max-width: 1600px) {
+
+  .icon-mobile {
+    display: none;
+  }
   .content-container {
     width: 50vw;
   }
